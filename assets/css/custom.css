@@ -5,34 +5,53 @@ svg {
     height: 1.25em;
 }
 
-/* Modal Styling */
+/* Styling for the modal container */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Adjust width as needed */
+    max-width: 500px; /* Set a max-width for a better look on larger screens */
+    background-color: var(--color-bg-subtle); /* Match your theme */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    justify-content: center;
-    align-items: center;
 }
 
+/* Modal content styling */
 .modal-content {
-    background: var(--color-bg-subtle);
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 500px;
+    padding: 1rem;
     text-align: center;
-    color: var(--color-fg-default);
+    border-radius: 8px;
 }
 
+/* Modal close button */
 .close-btn {
     position: absolute;
     top: 10px;
-    right: 20px;
-    font-size: 24px;
+    right: 10px;
+    font-size: 1.5rem;
     cursor: pointer;
+    color: var(--color-text-primary); /* Adjust as needed */
+}
+
+/* Styling for modal headers and content */
+.modal h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* For responsive design */
+@media (max-width: 600px) {
+    .modal {
+        width: 95%; /* Make the modal a bit wider on small screens */
+    }
 }
