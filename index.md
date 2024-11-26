@@ -11,7 +11,7 @@ interest-prefix: "my interests:"
 ▸ sixteen ◂
 
 
-▸ united kingdom 🇬🇧 ◂
+▸ united kingdom ◂
 
 
 ▸ he / him ◂
