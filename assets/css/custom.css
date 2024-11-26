@@ -5,14 +5,9 @@ svg {
     height: 1.25em;
 }
 
-/* Add a 'hidden' class to fully hide the modal */
-.modal.hidden {
-    display: none;
-}
-
 /* Basic modal styling */
 .modal {
-    display: flex; /* Show modals by default, use 'hidden' to hide */
+    display: none; /* Hidden by default */
     position: fixed;
     top: 0;
     left: 0;
@@ -34,6 +29,11 @@ svg {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     color: #fff; /* Text color */
+}
+
+/* Add a 'visible' class to show the modal */
+.modal.visible {
+    display: flex; /* Show modal */
 }
 
 /* Close button styling */
