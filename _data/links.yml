@@ -1,18 +1,12 @@
-- text: Website
+- text: twitter
+  url: https://x.com/INDSCVR
+  icon: twitter
+  
+- text: insta
+  url: https://www.instagram.com/indiscovering/
+  icon: instagram
+
+  - text: Website
   url: https://www.google.com/
   icon: globe2
-- text: GitHub
-  url: https://github.com/
-  icon: github
-- text: Twitter
-  url: https://www.twitter.com/
-  icon: twitter
-- text: LinkedIn
-  url: https://www.linkedin.com/
-  icon: linkedin
-- text: Facebook
-  url: https://www.facebook.com/
-  icon: facebook
-- text: Instagram
-  url: https://www.instagram.com/
-  icon: instagram
+  
