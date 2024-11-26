@@ -30,6 +30,30 @@
     {% include links.html %}
     {% include footer.html %}
   </main>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Open modal when link is clicked
+    document.querySelectorAll('[data-modal]').forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const modalId = link.getAttribute('data-modal') + '-modal';
+            document.getElementById(modalId).style.display = 'flex';
+        });
+    });
+
+    // Close modal when close button or outside modal is clicked
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', (event) => {
+            if (event.target.classList.contains('modal') || event.target.classList.contains('close-btn')) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
+
+  
 </body>
 
 </html>
