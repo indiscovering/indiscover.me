@@ -1,19 +1,18 @@
 ---
 avatar-name: "dyl's page"
 avatar-url: "https://indiscover.me/assets/img/avatar.png"
-interest-prefix: "my interests:"
 ---
 <p>⠀</p>
 
-<h4>▸ i'm dyl, also known by the usernames "indiscover" and "horizoned" online ◂</h4>
+<h3>▸ i'm dyl, also known by the usernames "indiscover" and "horizoned" online ◂</h3>
 
 <p>⠀</p>
 
-<h4>▸ sixteen - he / him ◂</h4>
+<h3>▸ sixteen - he / him ◂</h3>
 
 <p>⠀</p>
 
-<h4>▸ united kingdom ◂</h4>
+<h3>▸ united kingdom ◂</h3>
 
 <p>⠀</p>
 
@@ -38,8 +37,6 @@ interest-prefix: "my interests:"
     </script>
 </body>
 </html>
-
-<p>⠀</p>
 
 
 
