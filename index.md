@@ -1,6 +1,6 @@
 ---
 avatar-name: "dyl's page"
-avatar-url: "assets/img/avatar.png"
+avatar-url: "https://indiscover.me/assets/img/avatar.png"
 avatar-alt-text: "profile image"
 interest-prefix: "my interests:"
 ---
