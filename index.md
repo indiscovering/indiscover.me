@@ -8,10 +8,10 @@ interest-prefix: "my interests:"
 i'm dyl, also known as "indiscover" or "horizoned" online
 
 
-sixteen
+▸ sixteen ◂
 
 
-united kingdom
+▸ united kingdom ◂
 
 
-he/him
+▸ he/him ◂
