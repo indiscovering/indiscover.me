@@ -6,7 +6,43 @@
   url: https://www.instagram.com/indiscovering
   icon: instagram
 
+- text: steam
+  url: https://steamcommunity.com/id/indiscover
+  icon: steam
+
 - text: lastfm
   url: https://www.last.fm/user/horizoned
   icon: music-player-fill
+
+- text: discord profile
+  url: https://discord.com/users/345581101302939648
+  icon: discord
+
+- text: github
+  url: https://github.com/indiscovering
+  icon: github
+
+- text: spotify
+  url: https://open.spotify.com/user/_stolen_memes_
+  icon: spotify
+
+- text: snapchat
+  url: https://www.snapchat.com/add/indiscover
+  icon: snapchat
+
+- text: tiktok
+  url: https://www.tiktok.com/@indiscover
+  icon: tiktok
+
+- text: reddit
+  url: https://www.reddit.com/user/indiscovering/
+  icon: reddit
+
+- text: beatleader profile
+  url: https://beatleader.xyz/u/indiscover
+  icon: caret-down-square-fill
+
+- text: quaver profile
+  url: https://quavergame.com/user/207530
+  icon: music-note-beamed
   
