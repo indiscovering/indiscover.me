@@ -5,13 +5,13 @@ avatar-alt-text: "profile image"
 interest-prefix: "my interests:"
 ---
 
-▸ i'm dyl, also known by my usernames "indiscover" and "horizoned" online ◂
+▸ i'm dyl, also known by the usernames "indiscover" and "horizoned" online ◂
 
 
 ▸ sixteen ◂
 
 
-▸ united kingdom ◂
+▸ united kingdom 🇬🇧 ◂
 
 
-▸ he/him ◂
+▸ he / him ◂
