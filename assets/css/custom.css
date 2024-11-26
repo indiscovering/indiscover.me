@@ -5,9 +5,14 @@ svg {
     height: 1.25em;
 }
 
+/* Add a 'hidden' class to fully hide the modal */
+.modal.hidden {
+    display: none;
+}
+
 /* Basic modal styling */
 .modal {
-    display: none; /* Hidden by default */
+    display: flex; /* Show modals by default, use 'hidden' to hide */
     position: fixed;
     top: 0;
     left: 0;
