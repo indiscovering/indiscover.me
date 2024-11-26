@@ -1,3 +1,4 @@
+<body>
 <ul class="list-style-none f3 container-sm">
     {% for item in site.data.links %}
     <li class="mb-3 text-center text-semibold">
@@ -30,3 +31,22 @@
         <p><a href="mailto:example2@example.com">example2@example.com</a></p>
     </div>
 </div>
+
+    <script>
+function showEmailModal() {
+    document.getElementById("emailModal").style.display = "block";
+}
+
+function closeEmailModal() {
+    document.getElementById("emailModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+    const modal = document.getElementById("emailModal");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+</script>
+
+</body>
