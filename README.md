@@ -1,2 +1,3 @@
-# dyl's website
-geeked and fired up
+# indiscover.me
+
+all the stuff that runs my stupid little site
