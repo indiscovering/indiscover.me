@@ -15,22 +15,23 @@
     {% endfor %}
 </ul>
 
-<!-- About Me Modal -->
-<div id="about-me-modal" class="modal hidden">
+<!-- Add modals for each special link -->
+{% for item in site.data.links %}
+{% if item.url == "#" %}
+<!-- Dynamic modal -->
+<div id="{{ item.text | downcase | replace: ' ', '-' }}-modal" class="modal hidden">
     <div class="modal-content">
         <span class="close-btn">&times;</span>
+        {% if item.text == "about me" %}
         <h2>About Me</h2>
         <p>This is where you can add information about yourself.</p>
-    </div>
-</div>
-
-<!-- Email Modal -->
-<div id="email-modal" class="modal hidden">
-    <div class="modal-content">
-        <span class="close-btn">&times;</span>
+        {% elsif item.text == "email" %}
         <h2>Contact Me</h2>
         <p>Email 1: <a href="mailto:email1@example.com">email1@example.com</a></p>
         <p>Email 2: <a href="mailto:email2@example.com">email2@example.com</a></p>
+        {% endif %}
     </div>
 </div>
+{% endif %}
+{% endfor %}
 
