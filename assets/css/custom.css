@@ -5,36 +5,57 @@ svg {
     height: 1.25em;
 }
 
-/* Styling for the modal container */
+/* Basic modal styling */
 .modal {
-    display: none;
+    display: none; /* Hidden by default */
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%; /* Adjust width as needed */
-    max-width: 500px; /* Set a max-width for a better look on larger screens */
-    background-color: var(--color-bg-subtle); /* Match your theme */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
     z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
 }
 
 /* Modal content styling */
 .modal-content {
-    padding: 1rem;
-    text-align: center;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #1a1a1a; /* Matches a dark theme color */
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff; /* Text color */
 }
 
-/* Modal close button */
+/* Close button styling */
 .close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     cursor: pointer;
-    color: var(--color-text-primary); /* Adjust as needed */
+    color: #ccc;
+}
+
+/* Animation for modal appearance */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animation for modal disappearance */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Close button hover effect */
+.close-btn:hover {
+    color: #fff;
 }
 
 /* Styling for modal headers and content */
