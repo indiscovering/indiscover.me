@@ -5,28 +5,26 @@ avatar-alt-text: "profile image"
 interest-prefix: "my interests:"
 ---
 
-▸ i'm dyl, also known by the usernames "indiscover" and "horizoned" online ◂
+<p>▸ i'm dyl, also known by the usernames "indiscover" and "horizoned" online ◂</p>
 
+<p>•</p>
 
+<p>▸ sixteen - he / him ◂</p>
 
-▸ sixteen - he / him ◂
+<p>•</p>
 
+<p>▸ united kingdom ◂</p>
 
+<p>•</p>
 
-▸ united kingdom ◂
-
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my time</title>
 </head>
 <body>
-    <h1>the current time for me:</h1>
-    <p id="gmt-time"></p>
+    <h3>▸ for me, it's currently: ◂</h3>
+    <h4 id="gmt-time"></h4>
 
     <script>
         function updateGMTTime() {
