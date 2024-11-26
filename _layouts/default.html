@@ -7,17 +7,15 @@
   <meta name="description" content="{{ site.data.metadata.description }}">
   <meta name="title" content="{{ site.data.metadata.title }}">
   <meta name="image" content="{{ site.data.metadata.image }}">
-  
-  <!-- Basic Open Graph tags -->
-<meta property="og:title" content="dyl's site">
-<meta property="og:description" content="dyl's personal site and social links">
-<meta property="og:image" content="https://indiscover.me/assets/img/bannerthing.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://indiscover.me/">
 
-<!-- Additional tags for better embedding -->
-<meta property="og:type" content="website">
+  <!-- Basic Open Graph tags with dynamic content -->
+  <meta property="og:title" content="{{ site.data.metadata.meta['og:title'] }}">
+  <meta property="og:description" content="{{ site.data.metadata.meta['og:description'] }}">
+  <meta property="og:image" content="{{ site.data.metadata.meta['og:image'] }}">
+  <meta property="og:image:width" content="{{ site.data.metadata.meta['og:image:width'] }}">
+  <meta property="og:image:height" content="{{ site.data.metadata.meta['og:image:height'] }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:type" content="website">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
