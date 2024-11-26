@@ -1,3 +1,11 @@
+- text: about me
+  url: "#"
+  icon: info-circle # Choose an icon available in your Bootstrap icons
+
+- text: email
+  url: "#"
+  icon: envelope
+
 - text: twitter
   url: https://x.com/INDSCVR
   icon: twitter
