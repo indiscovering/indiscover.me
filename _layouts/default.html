@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const modalId = link.getAttribute('data-modal') + '-modal';
             const modal = document.getElementById(modalId);
             modal.style.display = 'flex';
-            modal.classList.remove('fade-out');
+            modal.classList.remove('fade-out'); // Reset any previous fade-out animation
+            modal.classList.remove('hidden'); // Remove 'hidden' class if it exists
             modal.style.animation = 'fadeIn 0.3s ease-out';
         });
     });
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.addEventListener('animationend', () => {
                 modal.style.display = 'none';
                 modal.classList.remove('fade-out'); // Reset class after closing
+                modal.classList.add('hidden'); // Add 'hidden' class to fully hide
             });
         });
     });
@@ -68,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.addEventListener('animationend', () => {
                 modal.style.display = 'none';
                 modal.classList.remove('fade-out'); // Reset class after closing
+                modal.classList.add('hidden'); // Add 'hidden' class to fully hide
             });
         }
     });
