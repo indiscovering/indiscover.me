@@ -6,3 +6,13 @@ description: "dyl's personal site and social links"
 
 # The main language of the site. Use HTML Language Code Reference.
 language: "en"
+
+# The URL of the image to use in embeds (e.g., Open Graph and Twitter Card)
+image: "https://indiscover.me/assets/img/bannerthing.png"
+
+# Optional: Additional Open Graph metadata
+meta:
+  og:title: "dyl's site"
+  og:description: "dyl's personal site and social links"
+  og:image: "https://indiscover.me/assets/img/bannerthing.png"
+  og:type: "website"
