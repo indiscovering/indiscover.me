@@ -5,7 +5,7 @@ interest-prefix: "my interests:"
 ---
 <p>⠀</p>
 
-<h4>▸ i'm dyl, also known by the usernames "indiscover" and "horizoned" online ![dyl](https://indiscover.me/assets/img/dyl.png "hello") ◂</h4>
+<h4>▸ i'm dyl, also known by the usernames "indiscover" and "horizoned" online ◂</h4>
 
 <p>⠀</p>
 
