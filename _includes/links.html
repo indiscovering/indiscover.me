@@ -1,52 +1,12 @@
-<body>
 <ul class="list-style-none f3 container-sm">
     {% for item in site.data.links %}
     <li class="mb-3 text-center text-semibold">
-        {% if item.text == "email" %}
-        <button class="Link--primary d-block p-3 border rounded-3 color-shadow-small color-bg-subtle"
-                onclick="showEmailModal()">
-            <svg class="bi mr-1" width="16" height="16" fill="currentColor">
-                <use xlink:href="{{ site.baseurl }}/assets/img/bootstrap-icons.svg#{{ item.icon | default: 'globe2' }}"/>
-            </svg><br>
-            {{ item.text }}
-        </button>
-        {% else %}
         <a href="{{ item.url }}" class="Link--primary d-block p-3 border rounded-3 color-shadow-small color-bg-subtle">
             <svg class="bi mr-1" width="16" height="16" fill="currentColor">
                 <use xlink:href="{{ site.baseurl }}/assets/img/bootstrap-icons.svg#{{ item.icon | default: 'globe2' }}"/>
             </svg><br>
             {{ item.text }}
         </a>
-        {% endif %}
     </li>
     {% endfor %}
 </ul>
-
-<!-- Modal HTML -->
-<div id="emailModal" class="email-modal">
-    <div class="email-modal-content">
-        <span class="close" onclick="closeEmailModal()">&times;</span>
-        <h3>Email Addresses</h3>
-        <p><a href="mailto:example1@example.com">example1@example.com</a></p>
-        <p><a href="mailto:example2@example.com">example2@example.com</a></p>
-    </div>
-</div>
-
-    <script>
-function showEmailModal() {
-    document.getElementById("emailModal").style.display = "block";
-}
-
-function closeEmailModal() {
-    document.getElementById("emailModal").style.display = "none";
-}
-
-window.onclick = function(event) {
-    const modal = document.getElementById("emailModal");
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-};
-</script>
-
-</body>
