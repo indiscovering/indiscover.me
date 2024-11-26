@@ -32,35 +32,14 @@
   </main>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     // Open modal when link is clicked
     document.querySelectorAll('[data-modal]').forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
             const modalId = link.getAttribute('data-modal') + '-modal';
-            document.getElementById(modalId).style.display = 'flex';
-        });
-    });
-
-    // Close modal when close button or outside modal is clicked
-    document.querySelectorAll('.modal').forEach(modal => {
-        modal.addEventListener('click', (event) => {
-            if (event.target.classList.contains('modal') || event.target.classList.contains('close-btn')) {
-                modal.style.display = 'none';
-            }
-        });
-    });
-});
-
-  document.addEventListener('DOMContentLoaded', function() {
-    // Get all modal triggers
-    const modalTriggers = document.querySelectorAll('[data-modal]');
-    modalTriggers.forEach(trigger => {
-        trigger.addEventListener('click', function(e) {
-            e.preventDefault();
-            const modalId = trigger.getAttribute('data-modal');
-            const modal = document.getElementById(`${modalId}-modal`);
-            modal.style.display = 'block';
+            const modal = document.getElementById(modalId);
+            modal.style.display = 'flex';
             modal.style.animation = 'fadeIn 0.3s ease-out';
         });
     });
@@ -71,9 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', function() {
             const modal = btn.closest('.modal');
             modal.style.animation = 'fadeOut 0.5s ease-out';
-            setTimeout(() => {
+            modal.addEventListener('animationend', () => {
                 modal.style.display = 'none';
-            }, 500); // Match the duration of the fade-out animation
+            });
         });
     });
 
@@ -82,9 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.classList.contains('modal')) {
             const modal = e.target;
             modal.style.animation = 'fadeOut 0.5s ease-out';
-            setTimeout(() => {
+            modal.addEventListener('animationend', () => {
                 modal.style.display = 'none';
-            }, 500); // Match the duration of the fade-out animation
+            });
         }
     });
 });
