@@ -18,8 +18,9 @@
 <!-- Add modals for each special link -->
 {% for item in site.data.links %}
 {% if item.url == "#" %}
-<!-- Dynamic modal -->
-<div id="{{ item.text | downcase | replace: ' ', '-' }}-modal" class="modal hidden">
+
+<!-- Modal structure -->
+<div id="{{ item.text | downcase | replace: ' ', '-' }}-modal" class="modal">
     <div class="modal-content">
         <span class="close-btn">&times;</span>
         {% if item.text == "about me" %}
@@ -32,6 +33,4 @@
         {% endif %}
     </div>
 </div>
-{% endif %}
-{% endfor %}
 
