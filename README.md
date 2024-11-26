@@ -1,1 +1,1 @@
-# indiscover.github.io
+# indiscovering.github.io
