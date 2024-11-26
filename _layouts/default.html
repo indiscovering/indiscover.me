@@ -33,20 +33,21 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Open modal when link is clicked
+    // Open modal when a link with a 'data-modal' attribute is clicked
     document.querySelectorAll('[data-modal]').forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
             const modalId = link.getAttribute('data-modal') + '-modal';
             const modal = document.getElementById(modalId);
-            modal.style.display = 'flex';
-            modal.classList.remove('fade-out'); // Reset any previous fade-out animation
-            modal.classList.remove('hidden'); // Remove 'hidden' class if it exists
+
+            // Show the modal and apply the fade-in animation
+            modal.classList.add('visible');
+            modal.classList.remove('fade-out');
             modal.style.animation = 'fadeIn 0.3s ease-out';
         });
     });
 
-    // Close modal functionality
+    // Close modal functionality when the close button is clicked
     const closeBtns = document.querySelectorAll('.close-btn');
     closeBtns.forEach(btn => {
         btn.addEventListener('click', function() {
@@ -54,9 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.classList.add('fade-out');
             modal.style.animation = 'fadeOut 0.5s ease-out';
             modal.addEventListener('animationend', () => {
-                modal.style.display = 'none';
-                modal.classList.remove('fade-out'); // Reset class after closing
-                modal.classList.add('hidden'); // Add 'hidden' class to fully hide
+                modal.classList.remove('visible');
+                modal.classList.remove('fade-out');
             });
         });
     });
@@ -68,9 +68,8 @@ document.addEventListener('DOMContentLoaded', function() {
             modal.classList.add('fade-out');
             modal.style.animation = 'fadeOut 0.5s ease-out';
             modal.addEventListener('animationend', () => {
-                modal.style.display = 'none';
-                modal.classList.remove('fade-out'); // Reset class after closing
-                modal.classList.add('hidden'); // Add 'hidden' class to fully hide
+                modal.classList.remove('visible');
+                modal.classList.remove('fade-out');
             });
         }
     });
