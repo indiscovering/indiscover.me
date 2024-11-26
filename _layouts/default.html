@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const modalId = link.getAttribute('data-modal') + '-modal';
             const modal = document.getElementById(modalId);
             modal.style.display = 'flex';
+            modal.classList.remove('fade-out');
             modal.style.animation = 'fadeIn 0.3s ease-out';
         });
     });
@@ -49,9 +50,11 @@ document.addEventListener('DOMContentLoaded', function() {
     closeBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const modal = btn.closest('.modal');
+            modal.classList.add('fade-out');
             modal.style.animation = 'fadeOut 0.5s ease-out';
             modal.addEventListener('animationend', () => {
                 modal.style.display = 'none';
+                modal.classList.remove('fade-out'); // Reset class after closing
             });
         });
     });
@@ -60,9 +63,11 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('click', function(e) {
         if (e.target.classList.contains('modal')) {
             const modal = e.target;
+            modal.classList.add('fade-out');
             modal.style.animation = 'fadeOut 0.5s ease-out';
             modal.addEventListener('animationend', () => {
                 modal.style.display = 'none';
+                modal.classList.remove('fade-out'); // Reset class after closing
             });
         }
     });
