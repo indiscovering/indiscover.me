@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', () => {
     closeBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const modal = btn.closest('.modal');
-            modal.style.animation = 'fadeOut 0.3s ease-out';
+            modal.style.animation = 'fadeOut 0.5s ease-out';
             setTimeout(() => {
                 modal.style.display = 'none';
-            }, 300); // Match the duration of the fade-out animation
+            }, 500); // Match the duration of the fade-out animation
         });
     });
 
@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('click', function(e) {
         if (e.target.classList.contains('modal')) {
             const modal = e.target;
-            modal.style.animation = 'fadeOut 0.3s ease-out';
+            modal.style.animation = 'fadeOut 0.5s ease-out';
             setTimeout(() => {
                 modal.style.display = 'none';
-            }, 300); // Match the duration of the fade-out animation
+            }, 500); // Match the duration of the fade-out animation
         }
     });
 });
