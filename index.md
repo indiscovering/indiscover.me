@@ -9,15 +9,40 @@ interest-prefix: "my interests:"
 
 
 
-▸ sixteen ◂
+▸ sixteen - he / him ◂
 
 
 
-▸ he / him ◂
+▸ united kingdom ◂
 
 
 
-▸ united kingdom - gmt ◂
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my time</title>
+</head>
+<body>
+    <h1>the current time for me:</h1>
+    <p id="gmt-time"></p>
+
+    <script>
+        function updateGMTTime() {
+            var currentDate = new Date();
+            var gmtTime = currentDate.toGMTString();
+            document.getElementById("gmt-time").textContent = gmtTime;
+        }
+
+        updateGMTTime();
+        setInterval(updateGMTTime, 1000);
+    </script>
+</body>
+</html>
+
+
+
 
 
 
