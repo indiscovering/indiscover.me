@@ -4,19 +4,19 @@ avatar-url: "assets/img/avatar.png"
 avatar-alt-text: "profile image"
 interest-prefix: "my interests:"
 ---
-<p> </p>
+<p>⠀</p>
 
 <h4>▸ i'm dyl, also known by the usernames "indiscover" and "horizoned" online ◂</h4>
 
-<p> </p>
+<p>⠀</p>
 
 <h4>▸ sixteen - he / him ◂</h4>
 
-<p> </p>
+<p>⠀</p>
 
 <h4>▸ united kingdom ◂</h4>
 
-<p> </p>
+<p>⠀</p>
 
 <html lang="en">
 <head>
@@ -30,7 +30,7 @@ interest-prefix: "my interests:"
     <script>
         function updateGMTTime() {
             var currentDate = new Date();
-            var gmtTime = currentDate.toGMTString();
+            var gmtTime = currentDate.toGMTString().toLowerCase();
             document.getElementById("gmt-time").textContent = gmtTime;
         }
 
@@ -40,7 +40,7 @@ interest-prefix: "my interests:"
 </body>
 </html>
 
-<p> </p>
+<p>⠀</p>
 
 
 
