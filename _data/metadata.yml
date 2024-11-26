@@ -15,4 +15,6 @@ meta:
   og:title: "dyl's site"
   og:description: "dyl's personal site and social links"
   og:image: "https://indiscover.me/assets/img/bannerthing.png"
+  og:image:width: "1200"
+  og:image:height: "630"
   og:type: "website"
