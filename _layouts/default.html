@@ -54,9 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const modal = btn.closest('.modal');
             modal.classList.add('fade-out');
             modal.style.animation = 'fadeOut 0.5s ease-out';
-            modal.addEventListener('animationend', () => {
+
+            // Add an event listener to reset the modal after the animation ends
+            modal.addEventListener('animationend', function handleAnimationEnd() {
                 modal.classList.remove('visible');
                 modal.classList.remove('fade-out');
+                modal.removeEventListener('animationend', handleAnimationEnd); // Remove this listener to avoid multiple triggers
             });
         });
     });
@@ -67,9 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const modal = e.target;
             modal.classList.add('fade-out');
             modal.style.animation = 'fadeOut 0.5s ease-out';
-            modal.addEventListener('animationend', () => {
+
+            // Add an event listener to reset the modal after the animation ends
+            modal.addEventListener('animationend', function handleAnimationEnd() {
                 modal.classList.remove('visible');
                 modal.classList.remove('fade-out');
+                modal.removeEventListener('animationend', handleAnimationEnd); // Remove this listener to avoid multiple triggers
             });
         }
     });
