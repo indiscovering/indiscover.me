@@ -57,3 +57,37 @@ document.addEventListener('DOMContentLoaded', () => {
 </body>
 
 </html>
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all modal triggers
+    const modalTriggers = document.querySelectorAll('a[data-modal]');
+
+    modalTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function(e) {
+            e.preventDefault();
+            const modalId = trigger.getAttribute('data-modal');
+            const modal = document.getElementById(modalId + '-modal');
+            if (modal) {
+                modal.style.display = 'block';
+            }
+        });
+    });
+
+    // Close button functionality
+    const closeButtons = document.querySelectorAll('.close-btn');
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const modal = button.closest('.modal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+
+    // Close modal when clicking outside of it
+    window.addEventListener('click', function(e) {
+        if (e.target.classList.contains('modal')) {
+            e.target.style.display = 'none';
+        }
+    });
+});
