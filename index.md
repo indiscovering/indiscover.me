@@ -1,5 +1,5 @@
 ---
-avatar-name: "dyl's page"
+avatar-name: "dyl's page !(https://indiscover.me/assets/img/dyl.png)"
 avatar-url: "https://indiscover.me/assets/img/avatar.png"
 interest-prefix: "my interests:"
 ---
