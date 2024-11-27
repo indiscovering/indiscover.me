@@ -22,6 +22,10 @@
   url: https://discord.com/users/345581101302939648
   icon: discord
 
+- text: pc specs
+  url: "#"
+  icon: pc-display
+
 - text: github
   url: https://github.com/indiscovering
   icon: github
