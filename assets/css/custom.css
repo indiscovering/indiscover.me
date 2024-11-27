@@ -86,3 +86,9 @@ svg {
         width: 95%; /* Make the modal a bit wider on small screens */
     }
 }
+
+.modal-content {
+    max-height: 80vh; /* Adjust this value as needed */
+    overflow-y: auto;
+}
+
