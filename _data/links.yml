@@ -1,10 +1,6 @@
 - text: about me
   url: "#"
-  icon: info-circle # Choose an icon available in your Bootstrap icons
-
-- text: email
-  url: "#"
-  icon: envelope
+  icon: info-circle
 
 - text: twitter
   url: https://x.com/INDSCVR
@@ -54,3 +50,6 @@
   url: https://quavergame.com/user/207530
   icon: music-note-beamed
 
+- text: email
+  url: "#"
+  icon: envelope
