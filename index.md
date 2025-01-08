@@ -8,7 +8,7 @@ avatar-url: "https://indiscover.me/assets/img/avatar.png"
 
 <p>⠀</p>
 
-<h3>▸ sixteen - he / him ◂</h3>
+<h3>▸ seventeen - he / him ◂</h3>
 
 <p>⠀</p>
 
