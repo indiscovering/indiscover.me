@@ -50,6 +50,10 @@
   url: https://quavergame.com/user/207530
   icon: music-note-beamed
 
+- text: osu profile
+  url: https://osu.ppy.sh/users/20614503
+  icon: 1-circle 
+
 - text: email
   url: "#"
   icon: envelope
