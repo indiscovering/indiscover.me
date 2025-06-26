@@ -26,15 +26,39 @@ avatar-url: "https://indiscover.me/assets/img/avatar.png"
     <h4 id="gmt-time"></h4>
 
     <script>
-  function updateGMTTime() {
-    var currentDate = new Date();
-    currentDate.setHours(currentDate.getHours() + 1); // add 1 hour for BST
-    var gmtTime = currentDate.toLocaleTimeString(); // formats it as a readable string
-    document.getElementById("gmt-time").textContent = gmtTime;
+  function getOrdinalSuffix(n) {
+    if (n > 3 && n < 21) return 'th';
+    switch (n % 10) {
+      case 1:  return 'st';
+      case 2:  return 'nd';
+      case 3:  return 'rd';
+      default: return 'th';
+    }
   }
 
-  updateGMTTime();
-  setInterval(updateGMTTime, 1000);
+  function updateUKDateTime() {
+    const currentDate = new Date();
+
+    const options = { timeZone: 'Europe/London', weekday: 'long', month: 'long' };
+    const day = currentDate.toLocaleDateString('en-GB', { day: 'numeric', timeZone: 'Europe/London' });
+    const suffix = getOrdinalSuffix(parseInt(day));
+    const weekday = currentDate.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'Europe/London' });
+    const month = currentDate.toLocaleDateString('en-GB', { month: 'long', timeZone: 'Europe/London' });
+
+    const time = currentDate.toLocaleTimeString('en-GB', {
+      timeZone: 'Europe/London',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    });
+
+    const formatted = `${weekday}, ${day}${suffix} of ${month} ${time}`;
+    document.getElementById("gmt-time").textContent = formatted;
+  }
+
+  updateUKDateTime();
+  setInterval(updateUKDateTime, 1000);
 </script>
 </body>
 </html>
