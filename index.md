@@ -26,15 +26,16 @@ avatar-url: "https://indiscover.me/assets/img/avatar.png"
     <h4 id="gmt-time"></h4>
 
     <script>
-        function updateGMTTime() {
-            var currentDate = new Date();
-            var gmtTime = currentDate.toGMTString().toLowerCase();
-            document.getElementById("gmt-time").textContent = gmtTime;
-        }
+  function updateGMTTime() {
+    var currentDate = new Date();
+    currentDate.setHours(currentDate.getHours() + 1); // add 1 hour for BST
+    var gmtTime = currentDate.toLocaleTimeString(); // formats it as a readable string
+    document.getElementById("gmt-time").textContent = gmtTime;
+  }
 
-        updateGMTTime();
-        setInterval(updateGMTTime, 1000);
-    </script>
+  updateGMTTime();
+  setInterval(updateGMTTime, 1000);
+</script>
 </body>
 </html>
 
